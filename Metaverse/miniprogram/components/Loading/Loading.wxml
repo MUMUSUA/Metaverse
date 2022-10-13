@@ -1,0 +1,6 @@
+<view class="loaded">
+    <button class="loadBtn" loading="{{myLoading}}">
+      <block wx:if="{{myLoading}}">数据加载中...</block> 
+      <block wx:else>已经到底了~~</block>
+    </button>
+</view>

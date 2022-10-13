@@ -1,0 +1,4 @@
+/* pages/article/article.wxss */
+/* pages/show/show.wxss */
+.showTitle{ font-size: 40rpx; padding:60rpx 0 20rpx; text-align: justify;}
+.showInfo{ font-size:26rpx; color:#888; padding-bottom:40rpx;}

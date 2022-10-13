@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index",
+    "Hd":"/components/TopView/TopView",
+    "Ft":"/components/FooterView/FooterView",
+    "Pub":"/components/PubLabel/PubLabel"
+  }
+}

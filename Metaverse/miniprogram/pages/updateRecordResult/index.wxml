@@ -1,0 +1,18 @@
+<view style="font-size: 55rpx;align-self: center;">修改新闻</view>
+
+
+
+<form bindsubmit="updateNews">
+新闻标题：
+  <input type="text" name="title" maxlength="-1" selection-start="" value="{{news.title}}"/>
+  作者：<input type="text" name="author" maxlength="-1" selection-start="" value="{{news.author}}"/>
+  
+标题图片：
+
+  <input type="text" name="pic" maxlength="-1" selection-start="" value="{{news.pic}}"/>
+  <!-- <button type="warn" bindtap="clickBtn" style="width:90%;align-items: center;">选择新闻标题图</button> -->
+  内容：<textarea  name="content"  maxlength="-1"  selection-start="" value="{{news.content}}"></textarea>
+  
+  <button type="primary" form-type="submit">点击更新</button>
+  <button form-type="reset" type="default">重置</button>
+</form>

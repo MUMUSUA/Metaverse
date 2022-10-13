@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Hd":"/components/TopView/TopView",
+    "Ft":"/components/FooterView/FooterView"},
+    "enablePullDownRefresh": true
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Hd":"/components/TopView/TopView",
+    "Ft":"/components/FooterView/FooterView",
+    "Pub":"/components/PubLabel/PubLabel"
+  }
+}

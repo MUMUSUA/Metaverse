@@ -1,0 +1,3 @@
+.loaded{ width:100%; background:#f1f1f1;padding-bottom:30rpx;}
+.loaded .loadBtn{ width:750rpx; background:none; font-size:28rpx; color:#888}
+.loaded .loadBtn::after{ border:none;}

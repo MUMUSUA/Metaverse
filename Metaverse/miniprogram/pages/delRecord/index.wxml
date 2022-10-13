@@ -1,0 +1,18 @@
+
+<view class="weui-panel__hd">📰新闻列表</view>
+<view class="weui-panel__bd">
+  <view wx:for="{{listData}}" wx:key="id" url="/pages/article/article?title={{item.title}}&content={{item.content}}"class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+	<view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+	  <image class="weui-media-box__thumb"  src="{{item.pic}}"  />
+	</view>
+<view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+	  <view class="weui-media-box__desc">{{item.title}}</view>
+	  <!-- <input class="weui-media-box__desc"
+	  value="{{item._id}}"
+	  bindinput="getId"
+	  ></input> -->
+</view>
+
+<button data-id="{{item._id}}" bindtap="delete" type="warn" size="mini">删除</button>
+  </view>
+</view>

@@ -1,0 +1,107 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/updateRecordResult/index",
+                    "pathName": "pages/updateRecordResult/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/updateRecordSuccess/index",
+                    "pathName": "pages/updateRecordSuccess/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "news",
+                    "pathName": "pages/news/news",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "weui",
+                    "pathName": "pages/WeUI/WeUI",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "consult",
+                    "pathName": "pages/consult/consult",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "self",
+                    "pathName": "pages/self/self",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "manage",
+                    "pathName": "pages/manage/manage",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "add",
+                    "pathName": "pages/createCollection/index",
+                    "query": "envId=cloud1-1g70clpz0a005e2b",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "s",
+                    "pathName": "pages/updateRecordResult/index",
+                    "query": "id=d4107ab162453b92034455ea5ea735a8",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "use",
+                    "pathName": "pages/use/use",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "app",
+                    "pathName": "pages/application/application",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "show",
+                    "pathName": "pages/show/show",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
+                }
+            ]
+        }
+    }
+}

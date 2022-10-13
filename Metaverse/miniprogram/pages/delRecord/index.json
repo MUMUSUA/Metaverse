@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "删除新闻",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  },
+  "enablePullDownRefresh": true
+}

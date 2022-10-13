@@ -1,0 +1,15 @@
+<!--pages/article/article.wxml-->
+<view class="container">
+  <view class="showTitle">{{title}}</view>
+  <view class="showInfo">
+    发布时间:{{time}}
+    <text decode>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    作者：{{author}}
+  </view>
+  <view class="showCon">
+    <text user-select decode>{{content}}</text>
+    
+  </view>
+
+</view>
+

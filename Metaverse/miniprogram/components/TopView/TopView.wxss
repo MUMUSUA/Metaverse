@@ -1,0 +1,16 @@
+/* components/TopView/TopView.wxss */
+.hd{
+	height: 90rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hd navigator,.hd .consult{height: 50rpx;}
+.hd image{height: 120%;}
+.consult{position: relative;}
+.consult .btn{position: absolute; width: 100%;height: 100%;left: 0;opacity: 0;}
+.container{
+	padding: 0 26rpx;
+	box-sizing: border-box;
+  }

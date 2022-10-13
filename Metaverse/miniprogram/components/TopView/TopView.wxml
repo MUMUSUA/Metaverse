@@ -1,0 +1,11 @@
+<view class="head">
+    <view class="container hd">
+        <navigator open-type="reLaunch" url="/pages/index/index" class="logo">
+         <image mode="heightFix" src="/images/logo.png"></image>
+        </navigator>
+        <view class="consult">
+         <button class="btn" open-type="contact"></button>
+         <image mode="heightFix" src="/images/consult.png"></image>
+        </view>
+    </view>
+</view>

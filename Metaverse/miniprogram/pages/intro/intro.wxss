@@ -1,0 +1,32 @@
+/* pages/videos/videos.wxss */
+
+.context{
+	background:linear-gradient(to right, rgb(146,168,209),rgb(247,202,201));
+
+
+  }
+  video{ 
+	width: 100vw;
+display: block;
+  }
+
+  
+.Box{ padding:80rpx 0; background: linear-gradient(to bottom, rgb(146,168,209),rgb(247,202,201));}
+.Box:nth-child(odd){ background:linear-gradient(to top, rgb(146,168,209),rgb(247,202,201));}
+
+.BoxTit{ width:490rpx; height: 70rpx; background: #DE2E05; border-radius: 70rpx; color:#fff; text-align: center; line-height: 70rpx;margin:0 auto; font-size:40rpx;  position: relative;margin-bottom: 40rpx;}
+.BoxTit::before{ display: block; content: ""; width:100%; height: 100%; border:2px dotted #DE2E05; position: absolute; top:0; left: 0;box-sizing: border-box; border-radius: 70rpx; transform: scale(1.03,1.2);}
+
+
+.BoxCon .pic{ width:100%; }
+.BoxCon .text{ padding:40rpx 26rpx 0; box-sizing: border-box; display: flex; flex-wrap: wrap;}
+.BoxCon .text view{width:50%; font-size:30rpx; line-height: 1.8em;position: relative; padding-left:18rpx; box-sizing: border-box;}
+.BoxCon .text view::before{ content: ""; display: block;width:10rpx; height: 10rpx; border-radius: 50%; background:#000; position: absolute; left:0; top:50%; margin-top:-5rpx;}
+.Box:nth-child(2n-1) .psBoxCon .text{ color:#fff;}
+.Box:nth-child(2n-1) .text view::before{ background:#fff}
+
+.BoxConOne{ color:#fff; display: flex; flex-wrap: wrap; justify-content: center;}
+.BoxConOne .item{ text-align: center; padding:20rpx;}
+.BoxConOne image{width:180rpx; height: 180rpx;}
+.BoxConOne .item view{ text-transform: uppercase;font-size: 28rpx; padding-top:5rpx;}
+

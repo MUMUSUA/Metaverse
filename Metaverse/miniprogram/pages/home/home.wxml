@@ -1,0 +1,114 @@
+<Hd></Hd>
+<!-- 组件TopView代替
+    <view class="head">
+    <view class="container hd">
+        <navigator open-type="reLaunch" url="/pages/index/index" class="logo">
+         <image mode="heightFix" src="/images/logo.png"></image>
+        </navigator>
+        <view class="consult">
+         <button class="btn" open-type="contact"></button>
+         <image mode="heightFix" src="/images/consult.png"></image>
+        </view>
+    </view>
+</view> -->
+
+
+<!-- 轮播图 -->
+<view class="banner">
+ <swiper 	indicator-dots  autoplay circular interval="3000">
+    <swiper-item><image src="/images/Metaverse3.jpeg"></image></swiper-item>
+    <swiper-item><image src="/images/Metaverse1.jpeg"></image></swiper-item>
+    <swiper-item><image src="/images/Metaverse2.jpeg"></image></swiper-item>
+ </swiper>
+</view>
+<view class="fenge"></view>
+
+
+
+<!-- 本源 -->
+<view class="intro">
+ <view class="container">
+
+    <Pub myTitle="本源" Url="/pages/intro/intro"></Pub>
+  <!-- <view class="pubTitle">
+   <view class="txt">本源</view>
+   <navigator class="more" open-type="reLaunch" url="/pages/intro/intro">更多></navigator>
+ </view> -->
+
+
+   <view class="intro-contents">
+    <!-- <navigator class="box"> -->
+    <view class="box">
+        <!-- <image class="pic" src="/images/intro1.jpeg"></image> -->
+        <video  class="pic" id="myVideo" src="{{src}}"  ></video>
+        <view class="ceng">
+            <!-- <view class="tit" bindtap="toVideos">大屏播放</view> -->
+            <view class="tit">元宇宙的由来</view>
+            <view class="line"></view>
+            <view class="discribe"></view>
+        </view>
+    </view>
+    <!-- </navigator> -->
+   </view>
+
+</view>
+</view>
+
+
+<!-- 资讯 -->
+
+<view class="news">
+    <view class="container">
+<Pub myTitle="资讯" Url="/pages/news/news"></Pub>
+        <!-- <view class="pubTitle">
+            <view class="txt">最新资讯</view>
+            <navigator class="more" open-type="reLaunch" url="/pages/news/news">更多></navigator>
+            </view> -->
+
+            <view class="newslist">
+                <navigator class="news-item" wx:for="{{listData}}" wx:key="ids" url="/pages/article/article?title={{item.title}}&author={{item.author}}&time={{item.post}}&content={{item.content}}">
+                    <view class="pic">
+                    <image src="{{item.pic}}"></image>
+                    </view>
+                    
+                    <view class="txt">
+                        <view class="title">{{item.title}}</view>
+                        <view class="info">作者:{{item.author}}<text space="ensp"> - </text>时间:{{item.post}}</view>
+                    </view>
+
+                </navigator>
+            </view>
+    </view>
+</view>
+
+
+<!-- 应用领域  -->
+
+<view class="use">
+    <view class="container">
+<Pub myTitle="应用领域" Url="/pages/use/use"></Pub>
+
+            <view class="weui-grids">
+            <block wx:for-items="{{useData}}" wx:key="">
+              <navigator url="" class="weui-grid" hover-class="weui-grid_active" 
+              url="/pages/article/article?title={{item.title}}&content={{item.content}}">
+                <image class="weui-grid__icon" src="{{item.pic}}" />
+                <view class="weui-grid__label">{{item.title}}</view>
+              </navigator>
+            </block>
+          </view>
+
+
+    </view>
+</view>
+
+<Ft></Ft>
+
+
+<!-- 组件FooterView代替
+    <view class="footer">
+    <image  class="pic" mode="widthFix" src="/images/logo.png"></image>
+    <view class="text">-了解新世界-</view>
+    <view class="text">-软件1902 09 李梦婷-</view>
+    <view class="text">-Copyright 2022-</view>
+</view> -->

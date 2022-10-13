@@ -1,0 +1,31 @@
+
+
+  <Hd></Hd>
+
+ 
+  <!--视频一-->
+
+      <video class="video" id="myVideo" src="{{src1}}"></video>
+
+      <video class="video" id="myVideo" src="{{src2}}"></video>
+
+
+
+  <view class="Box" wx:for="{{listData}}" wx:key="id">
+  <view class="BoxTit">
+    {{item.title}}
+  </view>
+  <view class="BoxCon">
+    <image src="{{item.pic}}" mode="widthFix" class="pic"></image>
+    <view class="text">        
+        {{item.content}}    
+    </view>
+  </view>
+</view>
+
+
+
+<Ft></Ft>
+
+
+

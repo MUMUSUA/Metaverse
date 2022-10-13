@@ -1,0 +1,20 @@
+<!--pages/person/person.wxml-->
+<Hd></Hd>
+
+<view class="avatar">
+  <image src="/images/self.gif" mode="aspectFill"></image>
+</view>
+
+<view class="menu">
+
+  <view bindtap="info">关于MetaExplorer</view>
+  <view bindtap="contact">客服联系方式</view>
+  <view bindtap="advice">意见建议</view>
+  <view bindtap="manage">管理者模式</view>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="请输入管理者口令" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+ <input bindinput='getInputValue' name='passwd' type='text'placeholder="请输入口令" auto-focus/>
+</modal>
+
+<Ft></Ft>

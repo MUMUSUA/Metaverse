@@ -1,0 +1,120 @@
+
+<Hd></Hd>
+
+<view class="page">
+    <view>
+      <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消
+            </view>
+        </view>
+
+
+        <view class="weui-cells searchbar-result searchBarCss" wx:if="{{inputVal.length > 0}}">
+          <!-- 搜索列表 -->
+
+          <view class="weui-panel__bd" wx:for="{{list}}" wx:key="key">
+            <navigator url="/pages/article/article?title={{item.title}}&author={{item.author}}&time={{item.post}}&content={{item.content}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active"
+             data-id='{{item.id}}' 
+             data-name='{{item.title}}' 
+             bindtap='btn_name'>
+                <view class="weui-media-box__desc">
+                    <view>{{item.title}}</view>
+                </view>
+            </navigator>
+          </view>
+        </view> 
+    </view>
+    </view>
+
+
+
+
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar contentCss">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+
+
+            
+
+
+
+
+                <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="weui-panel weui-panel_access">
+           
+            <view class="weui-panel__bd">
+              <navigator wx:for="{{listData}}" wx:key="id" url="/pages/article/article?title={{item.title}}&author={{item.author}}&time={{item.post}}&content={{item.content}}"class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" 
+              bindtap="addHit" data-id='{{item._id}}'>
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                  <image class="weui-media-box__thumb"  src="{{item.pic}}"  />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                  <view class="weui-media-box__desc">{{item.title}}</view>
+                  <view class="weui-media-box__desc" style="text-align: right;font-size: 25rpx;">{{item.post}}</view>
+                  <view class="weui-media-box__desc" style="text-align: right;font-size: 25rpx;">浏览量:{{item.hits}}</view>
+                </view>
+              </navigator>
+            </view>
+
+
+
+          </view>
+
+        </view>
+
+
+
+
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          
+            <view class="weui-panel__bd">
+              <navigator wx:for="{{hotData}}" wx:key="id" url="/pages/article/article?title={{item.title}}&author={{item.author}}&time={{item.post}}&content={{item.content}}"class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active"
+              bindtap="addHit" data-id='{{item._id}}'>
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                  <image class="weui-media-box__thumb"  src="{{item.pic}}"  />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                  <view class="weui-media-box__desc">{{item.title}}</view>
+                  <view class="weui-media-box__desc" style="text-align: right;font-size: 25rpx;">{{item.post}}</view>
+                  <view class="weui-media-box__desc" style="text-align: right;font-size: 25rpx;">浏览量:{{item.hits}}</view>
+
+                </view>
+              </navigator>
+            </view>
+        </view>
+      </view>
+
+
+
+
+
+              
+        </view>
+    </view>
+</view>
+
+<Ft></Ft>

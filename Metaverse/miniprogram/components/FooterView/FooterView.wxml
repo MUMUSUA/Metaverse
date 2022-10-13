@@ -1,0 +1,7 @@
+<!--components/FooterView/FooterView.wxml-->
+<view class="footer">
+    <image  class="pic" mode="widthFix" src="/images/logo.png"></image>
+    <view class="text">-了解新世界-</view>
+    <view class="text">-软件1902 09 李梦婷-</view>
+    <view class="text">-Copyright 2022-</view>
+</view>

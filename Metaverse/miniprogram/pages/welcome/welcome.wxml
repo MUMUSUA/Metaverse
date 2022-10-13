@@ -1,0 +1,23 @@
+<!--pages/welcome/welcome.wxml-->
+<!-- <view class="banner">
+  <image src="/images/welcome.gif" mode="widthFix"></image>
+  <navigator class="box" open-type="reLaunch"  url="/pages/index/index"
+>点我进首页</navigator>
+</view> -->
+
+<view class="wkMain">
+
+<navigator class="box" open-type="reLaunch" url="/pages/home/home">
+  <image class="pic" src="/images/welcome.gif"></image>
+  <view class="ceng">
+	<view class="tit">探索元宇宙</view>
+	<view class="line"></view>
+	<view class="des">Meataverse Explorer</view>
+	<view class="des">软件1902 09</view>
+	<view class="des">李梦婷</view>
+	
+  </view>
+</navigator>
+
+
+</view>

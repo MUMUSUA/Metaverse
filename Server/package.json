@@ -1,0 +1,20 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multiparty": "^4.2.1",
+    "node-datetime": "^2.1.2",
+    "nodejs-websocket": "^1.7.2",
+    "serve-index": "^1.9.1",
+    "socket.io": "^4.4.1",
+    "ws": "^8.5.0"
+  }
+}

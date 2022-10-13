@@ -1,0 +1,23 @@
+<view style="font-size: 55rpx;align-self: center;">上传新闻</view>
+
+
+
+<form bindsubmit="addNews">
+
+  <input type="text" name="title" placeholder="请输入新闻标题" maxlength="-1" selection-start=""/>
+  <input type="text" name="author" placeholder="请输入作者" maxlength="-1" selection-start=""/>
+  
+  <!-- <picker class="weui-btn" mode="date" value="{{date}}" start="2022-01-01" end="" bindchange="bindDateChange">
+<view name="data">
+  <input type="text" name="posttime" placeholder="请选择日期"
+   disabled="true" />
+</view>
+</picker> -->
+
+  <input type="text" name="pic" placeholder="请输入图片路径" maxlength="-1" selection-start=""/>
+  <!-- <button type="warn" bindtap="clickBtn" style="width:90%;align-items: center;">选择新闻标题图</button> -->
+  <textarea  name="content"  maxlength="-1" placeholder="请输入新闻内容" selection-start=""></textarea>
+  
+  <button type="primary" form-type="submit">点击上传</button>
+  <button form-type="reset" type="default">重置</button>
+</form>

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/intro/intro",
+    "pages/news/news",
+    "pages/use/use",
+    "pages/self/self",
+    "pages/article/article",
+    "pages/consult/consult",
+    "pages/manage/manage",
+    "pages/addRecord/index",
+    "pages/updateRecord/index",
+    "pages/updateRecordResult/index",
+    "pages/delRecord/index",
+    "pages/show/show"
+   
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "Meataverse Explorer🌌",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "list":[
+
+        {"text":"本源",
+          "pagePath": "pages/intro/intro",
+        "iconPath": "/images/explore-inactive.png",
+      "selectedIconPath": "/images/explore-active.png"},
+        {"text":"资讯",
+          "pagePath": "pages/news/news",
+          "iconPath": "/images/news-inactive.png",
+        "selectedIconPath": "/images/news-active.png"},
+          {"text":"首页",
+            "pagePath": "pages/home/home",
+            "iconPath": "/images/home-inactive.png",
+          "selectedIconPath": "/images/home-active.png"},
+        {"text":"应用",
+          "pagePath": "pages/use/use",
+          "iconPath": "/images/use-inactive.png",
+        "selectedIconPath": "/images/use-active.png"},
+        {"text":"其它",
+          "pagePath": "pages/self/self",
+          "iconPath": "/images/self-inactive.png",
+        "selectedIconPath": "/images/self-active.png"}
+      ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

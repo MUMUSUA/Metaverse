@@ -1,0 +1,6 @@
+<!--components/PubLabel/PubLabel.wxml-->
+<view class="pubTitle">
+            <view class="txt">{{myTitle}}</view>
+            <navigator class="more" open-type="reLaunch" url="{{Url}}">更多></navigator>
+</view>
+

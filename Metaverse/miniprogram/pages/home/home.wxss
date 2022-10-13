@@ -1,0 +1,105 @@
+/* .pubTitle{display: flex; justify-content: space-between;height: 60rpx; align-items: center;margin-bottom: 40rpx;}
+.pubTitle .txt{font-size: 40rpx;position: relative;padding-left: 20rpx;}
+.pubTitle .txt::before{display: block; width: 8rpx; height: 34rpx; background: red;content: "";position: absolute; left: 0;
+	top: 50%;margin-top: -15rpx;} 
+.pubTitle .more{font-size: 34rpx; color: #666;}
+.hd{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.hd navigator,.hd .consult{height: 50rpx;}
+.hd image{height: 120%;}
+.consult{position: relative;}
+.consult .btn{position: absolute; width: 100%;height: 100%;left: 0;opacity: 0;} */
+
+.banner{
+	width: 100%;
+	height: 380rpx;}
+
+.banner swiper{width: 100%;height: 100%;}
+.banner image{width:100%;height:380rpx;}
+
+
+.fenge{
+	width: 100%;
+	height:30rpx;
+	background: white;
+}
+
+/* 本源模块 */
+.intro{
+	background: #f0f3f8;
+	padding: 40rpx 0 70rpx;
+}
+.intro-contents{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.intro-contents .box{
+	width: 340rpx;
+	height: 380rpx;
+	margin-bottom: 35rpx;
+	
+}
+
+.intro-contents .pic{
+    margin-left: 45rpx;
+	width: 180%;
+	height:100%;
+}
+
+.intro-contents .tit{
+	text-align: center;
+}
+
+
+/* 资讯 */
+.news{
+	padding:70rpx 0 70rpx ;
+}
+
+.news-item{
+	display: flex;
+	padding:15rpx 0;
+	border: 1rpx dashed #eee;
+	justify-content: space-between;
+}
+.news-item .pic{
+width:230rpx;
+height: 150rpx;
+}
+.news-item .pic image{
+	width: 100%;
+	height: 100%;
+
+}
+.news-item .txt{
+width:440rpx;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.news-item .title{
+ font-size: 34rpx;
+}
+
+.news-item .info{
+	font-size: 23rpx;
+	color:#888;
+}
+
+.use{
+	background: #f0f3f8;
+	padding: 40rpx 0 70rpx;
+}
+/* 底部logo */
+/* .footer{padding: 30rpx 0; background: #f2f2f2; text-align: center;}
+.footer .pic{width: 180rpx;}
+.footer .text{font-size: 25rpx; color: #666;} */
